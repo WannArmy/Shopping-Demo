@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Shop - Product Detail</title>
+    <link href="css/app.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+</head>
+
+<body class="font-sans antialiased bg-gray-100">
+    <div class="min-h-screen bg-white">
+        <!-- Navigation Bar -->
+        <nav class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="index.html" class="text-2xl font-bold text-gray-800">MODA</a>
+                        </div>
+
+                        <!-- Navigation Links -->
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <a href="new-arrivals.html"
+                                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                New Arrivals
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                Men
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                Women
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                Sale
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                About Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:flex sm:items-center sm:ml-6">
+                        <a href="#" class="text-gray-500 hover:text-gray-700 mr-4">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </a>
+                        <a href="cart.html" class="text-gray-500 hover:text-gray-700 mr-4 relative">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                            <span
+                                class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <main>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
+                    <!-- Product Image Gallery -->
+                    <div class="flex flex-col-reverse">
+                        <div class="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none">
+                            <div class="grid grid-cols-4 gap-6">
+                                <button type="button"
+                                    class="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-indigo-500">
+                                    <span class="sr-only">Product Image 1</span>
+                                    <span class="absolute inset-0 rounded-md overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                            alt="Product detail image" class="w-full h-full object-cover object-center">
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-indigo-500">
+                                    <span class="sr-only">Product Image 2</span>
+                                    <span class="absolute inset-0 rounded-md overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                            alt="Product detail image" class="w-full h-full object-cover object-center">
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-indigo-500">
+                                    <span class="sr-only">Product Image 3</span>
+                                    <span class="absolute inset-0 rounded-md overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                            alt="Product detail image" class="w-full h-full object-cover object-center">
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-indigo-500">
+                                    <span class="sr-only">Product Image 4</span>
+                                    <span class="absolute inset-0 rounded-md overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                            alt="Product detail image" class="w-full h-full object-cover object-center">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full aspect-w-1 aspect-h-1">
+                            <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                alt="Sunset Stripe Maxi Dress"
+                                class="w-full h-full object-cover object-center sm:rounded-lg">
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
+                        <h1 class="text-3xl font-extrabold tracking-tight text-gray-900">Sunset Stripe Maxi Dress</h1>
+                        <div class="mt-3">
+                            <h2 class="sr-only">Product information</h2>
+                            <p class="text-3xl text-gray-900">NT$ 1,299</p>
+                        </div>
+
+                        <!-- Colors -->
+                        <div class="mt-6">
+                            <h3 class="text-sm text-gray-600 font-medium">Color: <span class="text-gray-900">Ocean
+                                    Blue</span></h3>
+                            <div class="mt-2 flex items-center space-x-3">
+                                <label
+                                    class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                                    <input type="radio" name="color-choice" value="blue" class="sr-only"
+                                        aria-labelledby="color-choice-0-label">
+                                    <span id="color-choice-0-label" class="sr-only">Blue</span>
+                                    <span aria-hidden="true"
+                                        class="h-8 w-8 bg-blue-500 border border-black border-opacity-10 rounded-full"></span>
+                                </label>
+                                <label
+                                    class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none">
+                                    <input type="radio" name="color-choice" value="tan" class="sr-only"
+                                        aria-labelledby="color-choice-1-label">
+                                    <span id="color-choice-1-label" class="sr-only">Tan</span>
+                                    <span aria-hidden="true"
+                                        class="h-8 w-8 bg-yellow-600 border border-black border-opacity-10 rounded-full"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Sizes -->
+                        <div class="mt-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-sm text-gray-600 font-medium">Size:</h3>
+                                <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Size
+                                    guide</a>
+                            </div>
+                            <fieldset class="mt-2">
+                                <legend class="sr-only">Choose a size</legend>
+                                <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
+                                    <label
+                                        class="border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white shadow-sm text-gray-900">
+                                        <input type="radio" name="size-choice" value="XS" class="sr-only"
+                                            aria-labelledby="size-choice-0-label">
+                                        <span id="size-choice-0-label">XS</span>
+                                    </label>
+                                    <label
+                                        class="border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white shadow-sm text-gray-900">
+                                        <input type="radio" name="size-choice" value="S" class="sr-only"
+                                            aria-labelledby="size-choice-1-label">
+                                        <span id="size-choice-1-label">S</span>
+                                    </label>
+                                    <label
+                                        class="border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white shadow-sm text-gray-900">
+                                        <input type="radio" name="size-choice" value="M" class="sr-only"
+                                            aria-labelledby="size-choice-2-label">
+                                        <span id="size-choice-2-label">M</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <form class="mt-6">
+                            <div class="flex items-center space-x-4">
+                                <label for="quantity" class="text-sm font-medium text-gray-700 sr-only">Quantity</label>
+                                <select id="quantity" name="quantity"
+                                    class="max-w-xs form-select rounded-md border border-gray-300 py-2 pl-3 pr-10 text-base leading-5 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <button type="submit"
+                                    class="w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </form>
+
+                        <section aria-labelledby="details-heading" class="mt-12">
+                            <h2 id="details-heading" class="sr-only">Additional details</h2>
+                            <div class="border-t border-gray-200 pt-10">
+                                <h3 class="text-sm font-medium text-gray-900">Description</h3>
+                                <div class="mt-4 prose prose-sm text-gray-500">
+                                    <p>Effortlessly elegant, our Sunset Stripe Maxi Dress features a flattering
+                                        silhouette and vibrant stripes, perfect for any summer occasion.</p>
+                                    <ul>
+                                        <li>Material: 100% Cotton</li>
+                                        <li>Care: Machine wash cold</li>
+                                        <li>Origin: Made in Taiwan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Customer Reviews -->
+                            <div class="border-t border-gray-200 pt-10 mt-10">
+                                <h3 class="text-sm font-medium text-gray-900">Customer Reviews</h3>
+                                <div class="flex items-center mt-4">
+                                    <div class="flex items-center">
+                                        <svg class="text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="text-gray-200 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                    <p class="ml-3 text-sm text-gray-700">4.5 out of 5 stars (120 reviews)</p>
+                                </div>
+                                <p class="mt-4 text-sm text-indigo-600 hover:text-indigo-500">Read all reviews</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- You Might Also Like Section -->
+                <div class="mt-24">
+                    <h2 class="text-2xl font-extrabold text-gray-900">You Might Also Like</h2>
+                    <div class="mt-8 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+                        <!-- Related Product 1 -->
+                        <div class="group relative">
+                            <div
+                                class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                <img src="https://images.unsplash.com/photo-1592861214068-07e36605d8f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy01MTEzMTF8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Elegant Woven Bag"
+                                    class="w-full h-full object-cover object-center lg:w-full lg:h-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="product-detail.html">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Elegant Woven Bag
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Accessories</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">NT$ 890</p>
+                            </div>
+                        </div>
+                        <!-- Related Product 2 -->
+                        <div class="group relative">
+                            <div
+                                class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                <img src="https://images.unsplash.com/photo-1610438171171-8e018d99c3a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy00NTI4Mzc0fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Delicate Necklace Set"
+                                    class="w-full h-full object-cover object-center lg:w-full lg:h-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="product-detail.html">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Delicate Necklace Set
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Accessories</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">NT$ 990</p>
+                            </div>
+                        </div>
+                        <!-- Related Product 3 -->
+                        <div class="group relative">
+                            <div
+                                class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                <img src="https://images.unsplash.com/photo-1579737033878-9e6b52c0e86b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTg3MDl8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Elegant Outerwear"
+                                    class="w-full h-full object-cover object-center lg:w-full lg:h-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="product-detail.html">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Elegant Outerwear
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Outerwear</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">NT$ 2,500</p>
+                            </div>
+                        </div>
+                        <!-- Related Product 4 -->
+                        <div class="group relative">
+                            <div
+                                class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                <img src="https://images.unsplash.com/photo-1596707327339-440a4305f63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyNzF8MHwxfGFsbHwxfHxweS1hcmNoaXZlcy0zNTUzNzJ8fHx8fHx8MTcwMDgxOTE5OHww&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Summer Dress"
+                                    class="w-full h-full object-cover object-center lg:w-full lg:h-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="product-detail.html">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Summer Dress
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Dresses</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">NT$ 1,199</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-200 mt-12 py-8 text-sm text-gray-600">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-900">Customer Service</a>
+                    <a href="#" class="hover:text-gray-900">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-900">Social Media</a>
+                </div>
+                <div>&copy; 2023 MODA. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>
